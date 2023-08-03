@@ -40,20 +40,15 @@ export const ProductCard = ({
     maxCount,
     isMaxCountReached,
     reset,
-  } = useProduct({
-    onChange,
-    product,
-    value,
-    initialValues,
-  });
+  } = useProduct({ onChange, product, value, initialValues });
 
   return (
     <Provider
       value={{
         counter,
         increaseBy,
-        product,
         maxCount,
+        product,
       }}
     >
       <div className={`${styles.productCard} ${className}`} style={style}>
@@ -62,6 +57,7 @@ export const ProductCard = ({
           isMaxCountReached,
           maxCount: initialValues?.maxCount,
           product,
+
           increaseBy,
           reset,
         })}

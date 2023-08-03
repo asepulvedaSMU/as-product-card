@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductImage debe mostrar el componente con la imagen personalizado 1`] = `
+<img
+  alt="Product"
+  className="productImg undefined"
+  src="http://hi.jpg/"
+/>
+`;
